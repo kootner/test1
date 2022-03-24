@@ -21,9 +21,13 @@
     <title>제작페이지 test</title>
 
     <style>
-        .family-info {
+      .wrap{
+        width: 500px;
+        margin: auto;
+      }
+      .family-info {
             width: 100px;
-        }
+      }
     </style>
 
     <script>
@@ -33,28 +37,29 @@
     </script>
 </head>
 <body>
-<label class="btn btn-secondary">사진 업로드 <input type="file" hidden>
-</label>
-<div class="family-info">
-    <p>가족정보</p>
-  <div class="form-group">
-    <label>아버지</label>
-    <input type="email" class="form-control">
+  <div class="wrap">
+    <label class="btn btn-secondary">사진 업로드 <input type="file" hidden>
+    </label>
+    <div class="family-info">
+      <p>가족정보</p>
+      <div class="form-group">
+        <label>아버지</label>
+        <input type="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>어머니</label>
+        <input type="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>자녀</label>
+        <input type="email" class="form-control">
+      </div>
+      <button onclick="familyinfo()" type="submit" class="btn btn-primary">입력</button>
+    </div>
   </div>
-  <div class="form-group">
-    <label>어머니</label>
-    <input type="email" class="form-control">
-  </div>
-  <div class="form-group">
-    <label>자녀</label>
-    <input type="email" class="form-control">
-  </div>
-    <button onclick="familyinfo()" type="submit" class="btn btn-primary">입력</button>
-</div>
 
 </body>
 </html>
-
 
 
 <!doctype html>
